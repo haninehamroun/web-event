@@ -1,4 +1,4 @@
-# web-event
+# Ijou Gdana 
 # Projet Site Web des Événements à Medenine
 Ce projet est un site web dédié aux événements dans le gouvernorat de Medenine, en Tunisie. Il permet aux utilisateurs de découvrir les événements à venir, de se tenir informés des activités locales, et de réserver leur place pour participer à ces événements.
 ## Fonctionnalités
