@@ -1,0 +1,90 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form label {
+    font-weight: bold;
+    margin: 10px 0 5px;
+    text-align: left;
+    width: 100%;
+}
+
+.login-form input {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-form .submit-btn {
+    background-color: orangered;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 85%;
+    transition: background-color 0.3s ease;
+}
+
+.login-form .submit-btn:hover {
+    background-color: orangered;
+}
+
+
+.signup-link {
+    margin-top: 10px;
+}
+
+.signup-link a {
+    color: orangered;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+
+.login-message {
+    background-color: #e8f5e9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-message h3 {
+    color: #388e3c;
+}
+
+.login-message p {
+    color: #388e3c;
+}

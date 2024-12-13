@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-container">
+            <a href="event.html">
+                <img src="image/logo.png" alt="Logo IjouGdana" id="logo">
+            </a>
+        </div>
+        <div class="search-container">
+            <!-- Search Bar -->
+            <div class="search-input-container">
+                <input type="text" id="event-search" placeholder="Rechercher des événements..." class="search-input">
+            </div>
+            
+            <!-- Location Select -->
+            <div class="select-container">
+                <select id="category-filter" class="category-select">
+                    <option value="" disabled selected>Choisissez un lieu</option>
+                    <option value="mednine">Medenine</option>
+                    <option value="Djerba">Djerba</option>
+                    <option value="Zarzis">Zarzis</option>
+                    <option value="Bengarden">Benguarden</option>
+                    <option value="BeniKhedache">Beni Khedache</option>
+                </select>
+            </div>
+            <!-- Search Button -->
+            <button id="search-button" class="search-button"><img src="image/rech.png" alt="" ></button>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#events">Trouver des Événements</a></li>
+            <li><a name="#"><a href="connexion.html">Connexion</a></a></li>
+            <li><a name="#"><a href="creer-compte.html">Ouvrir un compte</a></a></li>
+            <li><a name="#"><a href="contact.html">Contact</a></a></li>
+        </ul>
+    </nav>
+
+    <div class="contact-container">
+        <h2>Écrivez-nous votre problème ou votre souci</h2>
+        <p>Nous vous répondrons dans les plus brefs délais.</p>
+        
+        <!-- Formulaire de contact -->
+        <form id="contactForm" class="contact-form" onsubmit="submitContactForm(event)">
+            <label for="name">Nom et Prénom :</label>
+            <input type="text" id="name" name="name" placeholder="Votre nom complet" required>
+
+            <label for="email">Adresse Email :</label>
+            <input type="email" id="email" name="email" placeholder="Votre adresse email" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" placeholder="Décrivez votre problème ou votre question ici..." rows="5" required></textarea>
+
+            <button type="submit" class="submit-btn">Envoyer</button>
+        </form>
+
+        <div id="successMessage" class="success-message" style="display: none;">
+            <h3>Message envoyé !</h3>
+            <p>Merci de nous avoir contactés. Nous vous répondrons bientôt.</p>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/connexion.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-container">
+            <a href="event.html">
+                <img src="image/logo.png" alt="Logo IjouGdana" id="logo">
+            </a>
+        </div>
+        <div class="search-container">
+            <!-- Search Bar -->
+            <div class="search-input-container">
+                <input type="text" id="event-search" placeholder="Rechercher des événements..." class="search-input">
+            </div>
+            
+            <!-- Location Select -->
+            <div class="select-container">
+                <select id="category-filter" class="category-select">
+                    <option value="" disabled selected>Choisissez un lieu</option>
+                    <option value="mednine">Medenine</option>
+                    <option value="Djerba">Djerba</option>
+                    <option value="Zarzis">Zarzis</option>
+                    <option value="Bengarden">Benguarden</option>
+                    <option value="BeniKhedache">Beni Khedache</option>
+                </select>
+            </div>
+            <!-- Search Button -->
+            <button id="search-button" class="search-button"><img src="image/rech.png" alt="" ></button>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#events">Trouver des Événements</a></li>
+            <li><a name="#"><a href="connexion.html">Connexion</a></a></li>
+            <li><a name="#"><a href="creer-compte.html">Ouvrir un compte</a></a></li>
+            <li><a name="#"><a href="contact.html">Contact</a></a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Connexion</h2>
+        <!-- Formulaire de connexion -->
+        <form id="loginForm" class="login-form" onsubmit="login(event)">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" placeholder="Entrez votre mot de passe" required>
+
+            <button type="submit" class="submit-btn">Se Connecter</button>
+        </form>
+
+        <p class="signup-link">Pas encore de compte ? <a href="creer-compte.html">Créer un compte</a></p>
+
+        <div id="loginMessage" class="login-message" style="display: none;">
+            <h3>Connexion réussie !</h3>
+            <p>Bienvenue sur Ijou Gdana.</p>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/main2.js"></script>
+</body>
+</html>

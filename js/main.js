@@ -11,4 +11,10 @@ window.addEventListener('load', () => {
         image.classList.add('fadeIn');
     });
 });
+document.querySelectorAll('.button').forEach(button => {
+    button.addEventListener('click', (e) => {
+        console.log(`Button clicked: ${button.querySelector('span').innerText}`);
+    });
+});
+
 
