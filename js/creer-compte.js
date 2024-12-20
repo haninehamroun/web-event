@@ -13,3 +13,4 @@ function submitForm(event) {
     document.getElementById("signupForm").reset();
 }
 
+

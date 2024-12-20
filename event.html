@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ijou Gdana</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
 <body>
 <nav class="navbar">
@@ -36,7 +39,17 @@
 
     <!-- Navbar Links -->
     <ul class="nav-links">
-        <li><a href="#events">Trouver des Événements</a></li>
+        <li>
+            <a href="#" id="toggleMenu">Trouver des événements</a>
+            <ul class="dropdown-menu" id="eventOptions">
+                <li><a href="medenine.html">Medenine</a></li>
+                <li><a href="djerba.html">Djerba</a></li>
+                <li><a href="zarzis.html">Zarzis</a></li>
+                <li><a href="bengarden.html">Benguarden</a></li>
+                <li><a href="benikhadech.html">BeniKhedache</a></li>
+            </ul>
+          </li>
+          <li><a name="#"><a href="mesReservations.html">Mes réservations</a></a></li>
         <li><a name="#"><a href="connexion.html">Connexion</a></a></li>
         <li><a name="#"><a href="creer-compte.html">Ouvrir un compte</a></a></li>
         <li><a name="#"><a href="contact.html">Contact</a></a></li>
@@ -72,18 +85,140 @@
     <span class="button-label">Théatre</span>
 </div>
 <div class="button-container">
-    <a href="exposition.html" class="button">
+    <a href="foire.html" class="button">
         <img src="image/logo-exposition.png" alt="Exposition">
     </a>
-    <span class="button-label">Exposition</span>
+    <span class="button-label">Foire</span>
 </div>
 <div class="button-container">
-    <a href="rendonnée.html" class="button">
+    <a href="randonnée.html" class="button">
         <img src="image/logo-rendonnée.jpg" alt="Randonnée">
     </a>
     <span class="button-label">Randonnée</span>
 </div>
 </div>
+<section  id="testimonials">
+<section id="intervenants" class="py-5">
+    <section id="evenements">
+        <h2 class="slider-title">Les Événements à Vivre Ce Mois-ci : Découvrez, Participez, Profitez et Découvrez Nos Suggestions !</h2>
+    </section>
+    <div class="event-cards">
+        <div class="event-card" onclick="showDetails('rev_zarzis')">
+            <img src="image/zarzis/rela_zarzis.jpg" alt="Événement 3">
+            <div class="event-info">
+                <h3>"Réveillon Relax Zarzis : Musique, Ambiance et Délices !"</h3>
+                <p>Célébrez la nouvelle année dans une ambiance festive avec des chanteurs en live, une atmosphère détendue et des plats délicieux à savourer. Un réveillon inoubliable à Zarzis !</p>
+                <p class="date">31 Décembre 2024 - Zarzis</p>
+                <a href="reservation.html" class="reserve-btn">Réservez ici</a>
+            </div>
+        </div>
+        <div class="event-card" onclick="showDetails('ma3redh_iday')">
+            <img src="image/medenine/foire2.JPG" alt="Événement 2">
+            <div class="event-info">
+                <h3>معرض صنعة ايديا </h3>
+                <p>انضموا إلى "معرض صنعة إيديا" لاكتشاف أفضل الأعمال اليدوية والإبداعية! فرصة رائعة للتسوق ودعم الحرفيين المحليين. كونوا جزءًا من هذه التجربة المميزة!</p>
+                <p class="date">    27-28-29 ديسمبر 2024 طريق جربة قرب مول مدنين </p>
+                <a href="reservation.html" class="reserve-btn">Réservez ici</a>
+            </div>
+        </div>
+        <div class="event-card" onclick="showDetails('bolice_medenine')">
+            <img src="image/medenine/film.jpg" alt="Événement 3">
+            <div class="event-info">
+                <h3>Film "Bolice"</h3>
+                <p>Ne manquez pas "Bolice", un thriller tunisien palpitant qui captivera les amateurs de suspense et de films policiers. Vivez l'aventure sur grand écran et plongez dans son univers fascinant !</p>
+                <p class="date">12 décembre 2024</p>
+                <a href="reservation.html" class="reserve-btn">Réservez ici</a>
+            </div>
+        </div>
+    
+    <!-- Overlay -->
+    <div id="overlay" class="overlay"></div>
+    
+    <!-- Event details popup -->
+    <div id="event-details" class="event-details">
+        <h3 id="event-title"></h3>
+        <p id="event-description"></p>
+        <p id="event-date"></p>
+        <button onclick="closeDetails()">Fermer</button>
+    </div>
+    
+</section>
+</section>
+<section id="testimonials">
+    <h2>"Une Nuit Magique avec Raouf Maher au Théâtre El Ksour de Médenine ! 🎶✨"</h2>
+    <div class="event-video">
+        <video controls>
+            <source src="video/videoraouf.mp4" type="video/mp4">
+        </video>
+        <p class="caption">"Découvrez l'événement du mois !  Un concert musical exceptionnel de Raouf Maher au majestueux théâtre El  Ksour de Médenine. Une soirée mémorable qui a rassemblé une foule enthousiaste et émerveillée, offrant des instants magiques remplis de plaisir et de musique envoûtante. "</p>
+    </div>
+</section>
+<section id="testimonials">
+    <!-- Témoignages -->
+    <div class="testimonials">
+        <h2>Ce que disent nos spectateurs </h2>
+        <div class="testimonial">
+            <p>"J’ai assisté au concert de Raouf Maher grâce à ce site, et c’était une soirée inoubliable ! L’ambiance était magique. "</p>
+            <span>- Fatma B.</span>
+        </div>
+        <div class="testimonial">
+            <p>"Une expérience incroyable ! Le concert au théâtre Ksour de Médenine m’a transporté. Merci Ijou Gdana pour cette découverte ! "</p>
+            <span>- Ahmed K.</span>
+        </div>
+    </div>
+</section>
+<div class="container">
+    <!-- Section Événements similaires -->
+    <section id="similar-events">
+        <h2>Événements de ce type 🎤🎶</h2>
+        <p>Découvrez d'autres événements musicaux exceptionnels dans la région ! Ne manquez pas la chance de vivre des moments magiques en compagnie d'artistes talentueux.</p>
+        <a href="musique.html" class="btn">Voir plus d'événements musicaux</a>
+    </section>
+</div>
+<div class="container">
+    <!-- Section Newsletter -->
+    <section id="newsletter">
+        <h2>Restez informé</h2>
+        <p>Inscrivez-vous à notre newsletter pour ne rien manquer des événements dans votre région.</p>
+        <form>
+            <input type="email" placeholder="Votre email" required>
+            <button type="submit">S'inscrire</button>
+        </form>
+    </section>
+</div>
+<footer id="footer">
+    <div class="footer-container">
+        <div class="footer-links">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="#">Mes réservations</a></li>
+                <li><a name="#"><a href="connexion.html">Connexion</a></a></li>
+                <li><a name="#"><a href="creer-compte.html">Ouvrir un compte</a></a></li>
+                <li><a name="#"><a href="contact.html">Contact</a></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-social">
+            <h3>Suivez-nous</h3>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-contact">
+            <h3>Contact</h3>
+            <p>Email: <a href="mailto:contact@exemple.com">ijou.gdana@gmail.com</a></p>
+            <p>Tél: 75 213 549</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 Tous droits réservés. | <a href="#">Politique de confidentialité</a> | <a href="#">Conditions d'utilisation</a></p>
+    </div>
+</footer>
 <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ijou Gdana</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/typeevent.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo-container">
+        <a href="event.html">
+        <img src="image/logo.png" alt="Logo IjouGdana" id="logo">
+        </a>
+    </div>
+    <div class="search-container">
+        <!-- Search Bar -->
+        <div class="search-input-container">
+            <input type="text" id="event-search" placeholder="Rechercher des événements..." class="search-input">
+        </div>
+        
+        <!-- Location Select -->
+        <div class="select-container">
+            <select id="category-filter" class="category-select">
+                <option value="" disabled selected>Choisissez un lieu</option>
+                <option value="mednine">Medenine</option>
+                <option value="Djerba">Djerba</option>
+                <option value="Zarzis">Zarzis</option>
+                <option value="Bengarden">Benguarden</option>
+                <option value="BeniKhedache">Beni Khedache</option>
+            </select>
+        </div>
+        <!-- Search Button -->
+        <button id="search-button" class="search-button"><img src="image/rech.png" alt="" ></button>
+    </div>
+
+    <!-- Navbar Links -->
+    <ul class="nav-links">
+        <li>
+            <a href="#" id="toggleMenu">Trouver des événements</a>
+            <ul class="dropdown-menu" id="eventOptions">
+                <li><a href="medenine.html">Medenine</a></li>
+                <li><a href="djerba.html">Djerba</a></li>
+                <li><a href="zarzis.html">Zarzis</a></li>
+                <li><a href="bengarden.html">Benguarden</a></li>
+                <li><a href="benikhadech.html">BeniKhedache</a></li>
+            </ul>
+          </li>
+        <li><a name="#"><a href="mesReservations.html">Mes réservations</a></a></li>
+        <li><a name="#"><a href="connexion.html">Connexion</a></a></li>
+        <li><a name="#"><a href="creer-compte.html">Ouvrir un compte</a></a></li>
+        <li><a name="#"><a href="contact.html">Contact</a></a></li>
+    </ul>
+</nav>
+<div class="banner">
+    <div class="image-container">
+        <img src="image/quote_musique.png" alt="Slogan" class="banner-image">
+        <div class="caption">Votre Slogan</div>
+    </div>
+</div>
+<section  id="testimonials">
+    <section id="evenements">
+        <h2 class="slider-title">Découvrez les différents événements Musicaux de décembre !</h2>
+        <p>Plongez dans l'univers de la musique et vibrez au rythme des événements exceptionnels qui vous attendent ce mois-ci !</p>
+        <div class="event-cards">
+            <div class="event-card" onclick="showDetails('raouf')">
+                <img src="image/medenine/raouf-maher.webp" alt="Événement 4">
+                <div class="event-info">
+                    <h3>"Soirée Tunisienne avec Raouf Maher"</h3>
+                    <p>Rejoignez-nous pour une soirée magique avec Raouf Maher et laissez-vous emporter par les mélodies traditionnelles tunisiennes. Un moment d’émotion et de culture à ne pas manquer !</p>
+                    <p class="date">24 Décembre 2024- El ksour Medenine</p>
+                    <a href="reservation.html" class="reserve-btn">Réservez ici</a>
+                </div>
+            </div>
+            <div class="event-card" onclick="showDetails('cheesy')">
+                <img src="image/medenine/cheesy.jpg" alt="Événement 6">
+                <div class="event-info">
+                    <h3>"Réveillon en Musique : Nuit de Mélodies"</h3>
+                    <p>Plats variés, chanteurs en live et une ambiance festive pour célébrer la nouvelle année ensemble. Rejoignez-nous pour une soirée inoubliable !</p>
+                    <p class="date">31 Décembre 2024 - Cheesy Route Ceinture Medenine</p>
+                    <a href="reservation.html" class="reserve-btn">Réservez ici</a>
+                </div>
+            </div>
+            <div class="event-card" onclick="showDetails('majles_djerba')">
+                <img src="image/djerba/revillon_djerba.jpg" alt="Événement 3">
+                <div class="event-info">
+                    <h3>"Soirée Réveillon au Café Majles Djerba : Festivités et Convivialité !"</h3>
+                    <p>Venez célébrer la nouvelle année dans un cadre authentique, entre bonne musique, saveurs locales et moments conviviaux. ✨</p>
+                    <p class="date">31 décembre 2024 - Majles Djerba </p>
+                    <a href="reservation.html" class="reserve-btn">Réservez ici</a>
+                </div>
+            </div>
+            <div class="event-card" onclick="showDetails('rev_zarzis')">
+                <img src="image/zarzis/rela_zarzis.jpg" alt="Événement 3">
+                <div class="event-info">
+                    <h3>"Réveillon Relax Zarzis : Musique, Ambiance et Délices !"</h3>
+                    <p>Célébrez la nouvelle année dans une ambiance festive avec des chanteurs en live, une atmosphère détendue et des plats délicieux à savourer. Un réveillon inoubliable à Zarzis !</p>
+                    <p class="date">31 Décembre 2024 - Zarzis</p>
+                    <a href="reservation.html" class="reserve-btn">Réservez ici</a>
+                </div>
+            </div>
+            <div class="event-card" onclick="showDetails('mus_bnkh')">
+                <img src="image/benikhadeche/musique_bnkh.png" alt="Événement 1">
+                <div class="event-info">
+                    <h3>"Yalla Nghani : Chantez Ensemble, Vivez la Musique !"</h3>
+                    <p>Une soirée interactive où le public prend le micro et chante ensemble, dans une ambiance festive et conviviale.</p>
+                    <p class="date">28 Décembre 2024 - BeniKhedache</p>
+                    <a href="reservation.html" class="reserve-btn">Réservez ici</a>
+                </div>
+            </div>
+            <div class="event-card" onclick="showDetails('porche')">
+                <img src="image/bengarden/porche.png" alt="Événement 3">
+                <div class="event-info">
+                    <h3>Soirée Réveillon au Porche : Ambiance & Plats Gourmands</h3>
+                    <p>Venez fêter le réveillon au Porche avec une ambiance festive et des plats délicieux. Un moment convivial à ne pas manquer !</p>
+                    <p class="date">31 Décembre 2024 - Bengarden</p>
+                    <a href="reservation.html" class="reserve-btn">Réservez ici</a>
+                </div>
+            </div>
+            <div class="event-card" onclick="showDetails('hadhra')">
+                <img src="image/bengarden/hadhra.jpg" alt="Événement 3">
+                <div class="event-info">
+                    <h3>El Hadhra : Soirée Traditionnelle</h3>
+                    <p>Venez découvrir El Hadhra : une soirée authentique avec musique traditionnelle et plats délicieux !</p>
+                    <p class="date">16 Décembre 2024 - Bengarden</p>
+                    <a href="reservation.html" class="reserve-btn">Réservez ici</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Overlay -->
+        <div id="overlay" class="overlay"></div>
+        
+        <!-- Event details popup -->
+        <div id="event-details" class="event-details">
+            <h3 id="event-title"></h3>
+            <p id="event-description"></p>
+            <p id="event-date"></p>
+            <button onclick="closeDetails()">Fermer</button>
+        </div>
+    </section>
+    </section>
+<footer id="footer">
+    <div class="footer-container">
+        <div class="footer-links">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="#">Mes réservations</a></li>
+                <li><a name="#"><a href="connexion.html">Connexion</a></a></li>
+                <li><a name="#"><a href="creer-compte.html">Ouvrir un compte</a></a></li>
+                <li><a name="#"><a href="contact.html">Contact</a></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-social">
+            <h3>Suivez-nous</h3>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-contact">
+            <h3>Contact</h3>
+            <p>Email: <a href="mailto:contact@exemple.com">ijou.gdana@gmail.com</a></p>
+            <p>Tél: 75 213 549</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 Tous droits réservés. | <a href="#">Politique de confidentialité</a> | <a href="#">Conditions d'utilisation</a></p>
+    </div>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/typeevent.js"></script>
+</body>
+</html>

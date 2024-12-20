@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    width: 100% !important;
+    max-width: 400px !important;
+    margin: 50px auto  ;
+    padding: 20px ;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(255, 179, 0);
+}
+
+.form {
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px ;
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: orangered;
+}
+
+.button-container {
+    display: flex;           
+    gap: 15px;               
+    justify-content: flex-start; 
+    align-items: center;    
+    margin-top: 20px;        
+    padding: 10px;           
+    border-radius: 8px;      
+    background-color: #f9f9f9; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+button[type="submit"],
+button[type="button"] {
+    background-color: orangered;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;       
+}
+
+button[type="submit"]:hover,
+button[type="button"]:hover {
+    background-color: rgb(255, 179, 0);
+}

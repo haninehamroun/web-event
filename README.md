@@ -1,6 +1,6 @@
 # Ijou Gdana 
 # Projet Site Web des Événements à Medenine , Tunisie 
-Ce projet est un site web dédié aux événements dans le gouvernorat de Medenine, en Tunisie. Il permet aux utilisateurs de découvrir les événements à venir, de se tenir informés des activités locales, et de réserver leur place pour participer à ces événements.
+Ce projet est un site web statique dédié aux événements dans le gouvernorat de Medenine, en Tunisie. Il permet aux utilisateurs de découvrir les événements à venir, de se tenir informés des activités locales et de réserver leur place pour y participer. Ce site a été conçu sans serveur ni base de données, afin de se concentrer exclusivement sur la maîtrise des langages HTML, CSS et JavaScript.
 ## Fonctionnalités
 - **Recherche d'Événements** : Les utilisateurs peuvent rechercher des événements par mots-clés et par lieu.
 - **Filtres de Lieux** : Permet aux utilisateurs de filtrer les événements par lieux spécifiques tels que Medenine, Djerba, Zarzis, et Benguarden.
